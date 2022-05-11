@@ -26,4 +26,7 @@ Create a new Organizational Unit in the osd-staging-2 Organization
 with the following name: $kerberosID-challenge-3
 
 ## Challenge 4
+Move the new OU from #3 into the following OU:
+
+## Challenge 5
 Move the AWS account from #1 into the OU from #3
