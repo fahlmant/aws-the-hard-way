@@ -23,10 +23,13 @@ SREP mantains 4 AWS Organizations, each with a different purpose. Remember that 
 Generally, no commands or work should be done in these four accounts directly unless approved by SREP management.
 Please make sure no clusters are created in these accounts.
 
-Most development and testing work for an individual SREP should be done in the developer account allocated to them in the osd-staging-2 organization.
+Most development and testing work for an individual SREP should be done in the developer account allocated to them in the osd-staging-2 organization. These are assigned using the `osdctl account mgmt` commands.
 
 AWS Account Operator provisions new AWS accounts for OSD non-CCS clusters to be installed into. It uses the osd-staging-1 and
 rhcontrol to create accounts under. It organizes those accounts into various [Organizational Units (OUs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html).
+
+In osdctl and aws-account-operator, the code calls the AWS API equivalents of some aws cli commands we will see in this module. AWS provides a Go SDK that is used in our tools so that we can automate more complex workflows. Let's look at some of the underlying API calls
+in the [next section](cli-practice.md)
 
 
 

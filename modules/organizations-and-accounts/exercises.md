@@ -1,5 +1,11 @@
 # CLI Exercises
 
+## Introduction
+
+In this section there are several challenges laid out. They should all be
+executed using the AWS cli only. If you're stuck, try looking for the right command
+and its options [on the cli reference page](https://docs.aws.amazon.com/cli/latest/reference/organizations/index.html#available-commands).
+
 Pre-requisite: Setup the osd-staging-2 profile in your ~/.aws/credentials file. Run `aws sts get-caller-identity --profile osd-staging-2`
 
 The output should match:
@@ -16,17 +22,20 @@ Find an AWS account in the osd-staging-2 Organization that has no tags.
 
 ## Challenge 2
 Using the AWS account from #1, add two tags:
-Key    | Value
---------------
+```
+Key         | Value
+--------------------------
 "Name"      | "$kerberosID"
 "Challenge" | "2"
+```
 
 ## Challenge 3
 Create a new Organizational Unit in the osd-staging-2 Organization
-with the following name: $kerberosID-challenge-3
+with the following name: ${kerberosID}-challenge-3.
+
 
 ## Challenge 4
-Move the new OU from #3 into the following OU:
+Move the AWS account from #1 into the OU you created from #3.
 
 ## Challenge 5
-Move the AWS account from #1 into the OU from #3
+Move the new OU from #3 into the following OU: 
