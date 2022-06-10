@@ -17,6 +17,9 @@ The output should match:
 }
 ```
 
+
+        
+
 ## Challenge 1
 Find an AWS account in the osd-staging-2 Organization that has no tags. 
 
@@ -33,9 +36,8 @@ Key         | Value
 Create a new Organizational Unit in the osd-staging-2 Organization
 with the following name: ${kerberosID}-challenge-3.
 
-
 ## Challenge 4
 Move the AWS account from #1 into the OU you created from #3.
 
 ## Challenge 5
-Move the new OU from #3 into the following OU: 
+Move the new OU from #3 into the following OU: ou-rs3h-1pslrete
