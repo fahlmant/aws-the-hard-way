@@ -33,11 +33,19 @@ Key         | Value
 ```
 
 ## Challenge 3
-Create a new Organizational Unit in the osd-staging-2 Organization
-with the following name: ${kerberosID}-challenge-3.
+Create a new Organizational Unit with ou-rs3h-1pslrete as the parent 
+and use the following name: ${kerberosID}-challenge-3.
 
 ## Challenge 4
 Move the AWS account from #1 into the OU you created from #3.
 
 ## Challenge 5
-Move the new OU from #3 into the following OU: ou-rs3h-1pslrete
+Add a tag to your OU from #3:
+```
+Key         | Value
+--------------------------
+"Name"      | "$kerberosID"
+"Created"   | "$date"
+"Challenge" | "5"
+```
+
